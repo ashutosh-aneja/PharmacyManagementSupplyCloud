@@ -22,7 +22,7 @@ namespace PharmacyMedicineSupplyApi.Respository
             {
                 using (var httpclient = new HttpClient())
                 {
-                    httpclient.BaseAddress = new Uri("http://20.195.98.109/");
+                    httpclient.BaseAddress = new Uri("http://40.76.174.193/");
                     HttpResponseMessage res = await httpclient.GetAsync("MedicineStockInformation");
                     _log4net.Info("GetSupplies request Initiated for the Medicine Api");
                     if (res.IsSuccessStatusCode)
